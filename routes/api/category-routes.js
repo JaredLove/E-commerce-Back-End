@@ -85,6 +85,7 @@ router.put('/:id', (req, res) => {
       return;
     }
     res.json(dbPostData);
+    console.log("Updated!")
   })
   .catch(err => {
     console.log(err);
@@ -105,6 +106,7 @@ router.delete('/:id', (req, res) => {
         return;
       }
       res.json(dbPostData);
+      console.log("Deleted!")
     })
     .catch(err => {
       console.log(err);
